@@ -1,0 +1,8 @@
+{
+  "references": [
+    {
+      "path": "./packages/vscode-test-cli"
+    }
+  ],
+  "include": ["src/**/*"]
+}
