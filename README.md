@@ -1,7 +1,12 @@
 # VS Code Test Commnad Line Interface
 
+[![CircleCI](https://circleci.com/gh/SAP/vscode-test-cli.svg?style=svg)](https://circleci.com/gh/SAP/vscode-test-cli)
+[![Coverage Status](https://coveralls.io/repos/github/SAP/vscode-test-cli/badge.svg?branch=main)](https://coveralls.io/github/SAP/vscode-test-cli?branch=main)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/SAP/vscode-test-cli.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/SAP/vscode-test-cli/context:javascript)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![DependentBot](https://api.dependabot.com/badges/status?host=github&repo=SAP/vscode-test-cli)](https://dependabot.com/)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/vscode-test-cli)](https://api.reuse.software/info/github.com/SAP/vscode-test-cli)
 
 This repository contains packages which provide tools for testing VS Code extensions in a VS Code environment in a simple way.
 
