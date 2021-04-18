@@ -1,5 +1,5 @@
 {
-  "name": "@sap/vscode-test-cli",
+  "name": "@sap_oss/vscode-test-cli",
   "version": "0.1.0",
   "main": "dist/src/cli.js",
   "types": "index.d.ts",

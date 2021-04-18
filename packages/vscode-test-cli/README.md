@@ -12,7 +12,7 @@ Follow these steps to use this package:
    `vscode-test-cli` uses [`cosmiconfig`](https://github.com/davidtheclark/cosmiconfig) to load the configuration automatically. See the `cosmiconfig` documentation for which file types are supported and where the file should be placed. We recommend creating a file with the name `vscode-test-cli.config.js` and placing it in the extension's root folder. To get code assist for the properties you can define the type of the returned value like the following:
 
    ```js
-   /**@type {import('@sap/vscode-test-cli').Configuration}*/
+   /**@type {import('@sap_oss/vscode-test-cli').Configuration}*/
    const config = {
      // Define configuration properties ...
    };
