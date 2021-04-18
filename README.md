@@ -24,6 +24,16 @@ This also allows you to test the integration of the extension with VS Code, for 
 - Checking that your extension responds correctly to file system events and other VS Code events, like workspace changes and editor focus changes
 - Checking that your extensions adds diagnostics correctly by fetching them from VS Code APIs
 
+## Requirements
+
+To use the packages listed below, a supported [Node.js](https://nodejs.org/en/about/releases/) and [npm](https://www.npmjs.com/get-npm) version is required.
+
+You must also have access to the sources of the VS Code extension which you want to test and run on an operating system for which there is a [VS Code](https://code.visualstudio.com/download) version available.
+
+## Download and Installation
+
+See the specific package documentation for details.
+
 ## Packages
 
 The following packages are included in this repository:
@@ -31,6 +41,10 @@ The following packages are included in this repository:
 ### [![npm-vscode-test-cli](https://img.shields.io/npm/v/@sap_oss/vscode-test-cli)](https://www.npmjs.com/package/@sap_oss/vscode-test-cli) [`@sap_oss/vscode-test-cli`](packages/vscode-test-cli)
 
 This package helps you run the tests for your VS Code extension in a VS Code environment by configuring the extension parameters in a configuration file and running the tests from the `scripts` section of the `package.json`, using a command line interface.
+
+## Limitations and Known Issues
+
+See the specific package documentation for details.
 
 ## Support
 

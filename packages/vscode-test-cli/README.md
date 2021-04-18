@@ -4,10 +4,14 @@ This package helps you run the tests for your VS Code extension in a VS Code env
 
 This package uses the [`vscode-test`](https://github.com/microsoft/vscode-test) package for running the tests according to the configuration.
 
+Download and installation instructions can be found under the "Usage" section.
+
 ## Usage
 
 Follow these steps to use this package:
 
+1. Add a dev dependency to this package (`@sap_oss/vscode-test-cli`) in the `devDependencies` section of your extension's `package.json` file. Use the latest available version.
+1. Run `npm install` or `yarn` from the extension root directory (the directory in which the `package.json` file is found).
 1. Create a `vscode-test-cli` configuration file in the format specified in [index.d.ts](index.d.ts).
    `vscode-test-cli` uses [`cosmiconfig`](https://github.com/davidtheclark/cosmiconfig) to load the configuration automatically. See the `cosmiconfig` documentation for which file types are supported and where the file should be placed. We recommend creating a file with the name `vscode-test-cli.config.js` and placing it in the extension's root folder. To get code assist for the properties you can define the type of the returned value like the following:
 
@@ -21,22 +25,21 @@ Follow these steps to use this package:
 
    If you prefer to use a different name or a different path you can pass the `--config` parameter with a path to the configuration file (relative to the current working directory) when running `vscode-test-cli`.
 
-1. Add a dev dependency to this package in the `devDependencies` section of your extension's `package.json` file.
 1. Add a script for running the tests in the `scripts` section of your extension's `package.json` file:
 
    ```json
    "test": "vscode-test-cli"
    ```
 
+1. If your extension tests are written in TypeScript, add a dev dependency to `@types/mocha` in the `devDependencies` section of your extension's `package.json` file. To ensure compatibility, the version of `@types/mocha` should be the compatible with the version of `Mocha` defined in this package (for example, you can use `@types/mocha` version `8.2.0`). Run `npm install` or `yarn` from the extension root directory after adding the dependency.
 1. Create a [`Mocha`](https://mochajs.org/) configuration file in JSON or JavaScript format and set its path in the `vscode-test-cli` configuration file `mochaConfigPath` property.
 1. Write tests for your extension.
-1. If your extension tests are written in TypeScript, add a dev dependency to `@types/mocha` in the `devDependencies` section of your extension's `package.json` file. To ensure compatibility, the version of `@types/mocha` should be the compatible with the version of `Mocha` defined in this package (for example, you can use `@types/mocha` version `8.2.0`).
 1. Use the `test` script to run the tests.
 
 To add test coverage follow these steps:
 
 1. Create an [`nyc`](https://github.com/istanbuljs/nyc) configuration file in JSON or JavaScript format and set its path in the `vscode-test-cli` configuration file `nycConfigPath` property.
-1. Add a dev dependency to `nyc` in the `devDependencies` section of your extension's `package.json` file. To ensure compatibility, the version of `nyc` should be the same as the dependency defined in this package (version `15.1.0`).
+1. Add a dev dependency to `nyc` in the `devDependencies` section of your extension's `package.json` file. To ensure compatibility, the version of `nyc` should be the same as the dependency defined in this package (version `15.1.0`). Run `npm install` or `yarn` from the extension root directory after adding the dependency.
 1. Add a script for running the tests with code coverage and reporting the code coverage results in the `scripts` section of your extension's `package.json` file:
 
    ```json
@@ -115,11 +118,25 @@ This package currently supports collecting code coverage information only with `
 
 If you would like to collect code coverage information during the tests run, you must specify the `--coverage` command line argument when running `vscode-test-cli` and specify an `nyc` configuration file in JSON or JavaScript format in the `nycConfigPath` configuration property. You can see the supported `nyc` configuration options [here](https://github.com/istanbuljs/nyc#common-configuration-options).
 
-#### Code coverage limitation
+## Limitations
+
+### Supported testing frameworks
+
+This package currently supports running tests only with `Mocha`.
+
+### Supported code coverage frameworks
+
+This package currently supports collecting code coverage information only with `nyc`.
+
+### Code coverage limitation
 
 Code coverage will be collected for all code executed from the tests. However, please note that code that runs from the extension directly, which is loaded by VS Code, will not be included in the code coverage. Therefore, if your tests require the same files specified in the `main` property of the extension's `package.json` file, the code coverage will not be collected.
 
 The reason for this limitation is that this code is loaded by VS Code before the files are instrumented.
+
+## Known Issues
+
+There are no known issues.
 
 ## Contributing
 
