@@ -26,7 +26,7 @@ This also allows you to test the integration of the extension with VS Code, for 
 
 ## Requirements
 
-To use the packages listed below, a supported [Node.js](https://nodejs.org/en/about/releases/) version and a package manager for Node.js such as [npm](https://www.npmjs.com/get-npm) or [`yarn`](https://yarnpkg.com/) is required.
+To use the packages listed below, a supported [Node.js](https://nodejs.org/en/about/releases/) version and a package manager for Node.js such as [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/) is required.
 
 You must also have access to the sources of the VS Code extension which you want to test and run on an operating system for which there is a [VS Code](https://code.visualstudio.com/download) version available.
 
