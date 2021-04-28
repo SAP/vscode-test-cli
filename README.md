@@ -1,4 +1,4 @@
-# VS Code Test Commnad Line Interface
+# VS Code Test Command Line Interface
 
 [![CircleCI](https://circleci.com/gh/SAP/vscode-test-cli.svg?style=svg)](https://circleci.com/gh/SAP/vscode-test-cli)
 [![Coverage Status](https://coveralls.io/repos/github/SAP/vscode-test-cli/badge.svg?branch=main)](https://coveralls.io/github/SAP/vscode-test-cli?branch=main)
