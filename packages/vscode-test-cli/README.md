@@ -1,4 +1,4 @@
-# VS Code Test Command-Line Interface
+# VS Code Test Command Line Interface
 
 This package helps you run the tests for your VS Code extension in a VS Code environment by configuring the extension parameters in a configuration file and running the tests from the `scripts` section of the `package.json`, using a command line interface.
 
