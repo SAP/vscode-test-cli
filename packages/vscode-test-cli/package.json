@@ -39,7 +39,7 @@
     "lodash": "4.17.20",
     "mocha": "8.2.1",
     "nyc": "15.1.0",
-    "vscode-test": "1.5.1",
+    "vscode-test": "1.5.2",
     "yargs": "16.2.0"
   }
 }
