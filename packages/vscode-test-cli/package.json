@@ -35,7 +35,7 @@
   "dependencies": {
     "cosmiconfig": "7.0.0",
     "fs-extra": "9.1.0",
-    "glob": "7.1.6",
+    "glob": "7.1.7",
     "lodash": "4.17.21",
     "mocha": "8.2.1",
     "nyc": "15.1.0",
