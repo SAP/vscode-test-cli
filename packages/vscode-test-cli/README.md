@@ -2,7 +2,7 @@
 
 This package helps you run the tests for your VS Code extension in a VS Code environment by configuring the extension parameters in a configuration file and running the tests from the `scripts` section of the `package.json`, using a command line interface.
 
-This package uses the [`vscode-test`](https://github.com/microsoft/vscode-test) package for running the tests according to the configuration.
+This package uses the [`@vscode/test-electron`](https://github.com/microsoft/vscode-test) package for running the tests according to the configuration.
 
 Download and installation instructions can be found under the "Usage" section.
 

@@ -3,7 +3,7 @@ import {
   resolveCliPathFromVSCodeExecutablePath,
   downloadAndUnzipVSCode,
   runTests,
-} from "vscode-test";
+} from "@vscode/test-electron";
 import { spawnSync } from "child_process";
 import { readdir, writeJson, unlink, pathExists, mkdirs, stat } from "fs-extra";
 import { map, isArray, filter, isEmpty } from "lodash";

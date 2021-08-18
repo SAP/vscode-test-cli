@@ -24,7 +24,7 @@ import { PathRemover, SinonStubType } from "./test-utils";
 
 use(chaiAsPromised);
 type VSCodeTestsType = typeof import("../src/vscode-tests");
-type VSCodeTestLibType = typeof import("vscode-test");
+type VSCodeTestLibType = typeof import("@vscode/test-electron");
 
 describe("vscode-tests", () => {
   const pathsRemover = new PathRemover();
@@ -568,7 +568,7 @@ describe("vscode-tests", () => {
       runTestsStub = sinon.stub();
       spawnSyncStub = sinon.stub();
       runVSCodeTests = (proxyquire(require.resolve("../src/vscode-tests"), {
-        "vscode-test": {
+        "@vscode/test-electron": {
           resolveCliPathFromVSCodeExecutablePath: resolveCliPathFromVSCodeExecutablePathStub,
           downloadAndUnzipVSCode: downloadAndUnzipVSCodeStub,
           runTests: runTestsStub,
@@ -1405,7 +1405,7 @@ describe("vscode-tests", () => {
         runTestsFromCommandLineInner = (proxyquire(
           require.resolve("../src/vscode-tests"),
           {
-            "vscode-test": {
+            "@vscode/test-electron": {
               resolveCliPathFromVSCodeExecutablePath: resolveCliPathFromVSCodeExecutablePathStub,
               downloadAndUnzipVSCode: downloadAndUnzipVSCodeStub,
               runTests: runTestsStub,
