@@ -40,6 +40,6 @@
     "mocha": "8.2.1",
     "nyc": "15.1.0",
     "@vscode/test-electron": "1.6.2",
-    "yargs": "16.2.0"
+    "yargs": "17.2.1"
   }
 }
